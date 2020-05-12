@@ -1,0 +1,17 @@
+## Configバージョン. (変更しない!)
+version: 1
+
+## 言語設定(対応している言語: eng, jpn)
+## ServerMailAPIはnukkit.ymlで設定された言語を使用します。
+## Prefix
+prefix: "§7[ServerMail] §r"
+
+## メールリストで1ページに表示するメールの数
+mailList: 5
+
+## コンソールからメールを送信した時に使われる名前
+consoleCommandSenderName: "server"
+## 参加時に未読のメールがあった場合プレイヤーに通知します。
+noticeWhenPlayerJoin: true
+## メールを受信した時にプレイヤーに通知します。
+noticeWhenPlayerReceive: true

@@ -1,0 +1,17 @@
+## Config version. (DO NOT CHANGE!)
+version: 1
+
+## Language(Available: eng, jpn)
+## ServerMailAPI using a language configured on nukkit.yml.
+## Prefix
+prefix: "§7[ServerMail] §r"
+
+## Number of mail that shown in one page.
+mailList: 5
+
+## The name used when sending an email from the console.
+consoleCommandSenderName: "server"
+## Notice for players when join if there is unread mails.
+noticeWhenPlayerJoin: true
+## Notice for players when receive new mail.
+noticeWhenPlayerReceive: true

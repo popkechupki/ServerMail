@@ -1,0 +1,20 @@
+name: ServerMail
+main: net.comorevi.np.sma.ServerMailPlugin
+api: ["1.0.9"]
+version: 1.0.0
+description: Server mail for Nukkit.
+author: popkechupki
+
+permissions:
+  servermailapi:
+    children:
+      servermailapi.command:
+        children:
+          servermailapi.command.delete:
+            default: true
+          servermailapi.command.list:
+            default: true
+          servermailapi.command.read:
+            default: true
+          servermailapi.command.send:
+            default: true
