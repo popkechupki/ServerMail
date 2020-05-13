@@ -19,7 +19,7 @@ public class MailNotifier implements Listener {
             for (MailData mailData : ServerMailAPI.getInstance().getMailBox(event.getPlayer().getName())) {
                 if (!mailData.read) unread += 1;
             }
-            event.getPlayer().sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.event.join", String.valueOf(unread)));
+            if (unread != 0) event.getPlayer().sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.event.join", String.valueOf(unread)));
         }
     }
 
