@@ -1,6 +1,6 @@
 # ServerMail
 A Nukkit plugin to mail other players.
-**Support over Java11.**
+**Support over Java11. (Release build)** But if you can build by yourself, you can use this plugin on Java 8 environment.
 ### Language
 Support two languages. English and Japanese. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.
  - [English](#Usage)
