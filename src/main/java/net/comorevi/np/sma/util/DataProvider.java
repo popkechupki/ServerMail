@@ -139,7 +139,7 @@ public class DataProvider {
     public void connectSQL() {
         try {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:./plugins/ServerMailAPI/DataDB.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:./plugins/ServerMail/DataDB.db");
             String sql = "CREATE TABLE IF NOT EXISTS mail (" +
                     " id INTEGER PRIMARY KEY AUTOINCREMENT," +
                     " subject TEXT NOT NULL," +

@@ -14,7 +14,7 @@ public class ConfigHandler {
 
     private ConfigHandler() {
         ServerMailPlugin.getInstance().saveResource("lang/" + LanguageUtil.getPluginLang() + "/config.yml", "config.yml", false);
-        config = new Config(new File("./plugins/ServerMailAPI", "config.yml"), Config.YAML);
+        config = new Config(new File("./plugins/ServerMail", "config.yml"), Config.YAML);
         if (config.getInt("version") < CONFIG_VERSION) {
             Server.getInstance().getLogger().warning(ServerMailPlugin.prefix + "Please delete old config file.");
             Server.getInstance().getPluginManager().disablePlugin(ServerMailPlugin.getInstance());

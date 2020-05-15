@@ -14,7 +14,7 @@ public class MessageHandler {
 
     private MessageHandler() {
         ServerMailPlugin.getInstance().saveResource("lang/" + LanguageUtil.getPluginLang() + "/lang.properties", "lang.properties", false);
-        message = new Config(new File("./plugins/ServerMailAPI", "lang.properties"), Config.PROPERTIES);
+        message = new Config(new File("./plugins/ServerMail", "lang.properties"), Config.PROPERTIES);
     }
 
     public String translateString(String key) {
