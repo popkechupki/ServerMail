@@ -15,6 +15,7 @@ public class MailNotifier implements Listener {
     @EventHandler
     public void onDataPacketReceive(DataPacketReceiveEvent event) {
         if (event.getPacket() instanceof SetLocalPlayerAsInitializedPacket && ConfigHandler.getInstance().getConfig().getBoolean("noticeWhenPlayerJoin")) {
+            if (!ServerMailAPI.getInstance().existsMailData(event.getPlayer().getName())) return;
             int unread = 0;
             for (MailData mailData : ServerMailAPI.getInstance().getMailBox(event.getPlayer().getName())) {
                 if (!mailData.read) unread += 1;
