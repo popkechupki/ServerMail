@@ -11,7 +11,7 @@ import net.comorevi.np.sma.resource.ConfigHandler;
 import net.comorevi.np.sma.resource.MessageHandler;
 import net.comorevi.np.sma.util.MailData;
 
-// sendmail <subject> <content> <target>
+// sendmail <target> <subject> <content>
 public class SendMailCommand extends Command {
     public SendMailCommand(String name, String description, String usageMessage) {
         super(name, description, usageMessage, new String[]{"send"});
@@ -36,7 +36,15 @@ public class SendMailCommand extends Command {
         }
 
         String sender = commandSender instanceof Player ? commandSender.getName() : ConfigHandler.getInstance().getConfig().getString("consoleCommandSenderName");
-        MailData mailData = new MailData(strings[0], strings[1], sender, strings[2]);
+        StringBuilder message = new StringBuilder();
+        for (int i = 2; i < strings.length; i++) {
+            if (i == 2) {
+                message.append(strings[i]);
+            } else {
+                message.append(" ").append(strings[i]);
+            }
+        }
+        MailData mailData = new MailData(strings[1], message.toString(), sender, strings[0]);
         SendMailQueue.queue.put(sender, mailData);
         commandSender.sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.send.confirm", mailData.target));
         return true;

@@ -1,7 +1,7 @@
 name: ServerMail
 main: net.comorevi.np.sma.ServerMailPlugin
 api: ["1.0.9"]
-version: 1.0.3
+version: 1.0.4
 description: Server mail for Nukkit.
 author: popkechupki
 
