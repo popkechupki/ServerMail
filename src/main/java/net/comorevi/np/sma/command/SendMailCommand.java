@@ -1,12 +1,10 @@
 package net.comorevi.np.sma.command;
 
 import cn.nukkit.Player;
-import cn.nukkit.Server;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
 import net.comorevi.np.sma.ServerMailAPI;
 import net.comorevi.np.sma.ServerMailPlugin;
-import net.comorevi.np.sma.event.plugin.PlayerMailReceiveEvent;
 import net.comorevi.np.sma.resource.ConfigHandler;
 import net.comorevi.np.sma.resource.MessageHandler;
 import net.comorevi.np.sma.util.MailData;
