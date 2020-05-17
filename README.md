@@ -10,7 +10,7 @@ You can control this plugin with command, config.yml and lang.properties. Descri
 ### Command
 | Command | Description |
 |--|--|
-| /sendmail {subject} {message} {target} | Send mail to entered player. |
+| /sendmail {target} {subject} {message. you can use space key.} | Send mail to entered player. |
 | /send | Confirm send new mail. |
 | /listmail {page} | See your mail box. |
 | /readmail {ID} | Read specified ID mail.(Confirmable /listmail) |
@@ -20,7 +20,7 @@ You can control this plugin with command, config.yml and lang.properties. Descri
 ### コマンド
 | Command | Description |
 |--|--|
-| /sendmail {件名} {メッセージ} {送信先} | 指定したプレイヤーにメッセージを送信します。 |
+| /sendmail {送信先} {件名} {内容(スペースが使えます。)} | 指定したプレイヤーにメッセージを送信します。 |
 | /send | メールの送信を確定します。 |
 | /listmail {page} | メールボックスを確認します。 |
 | /readmail {ID} | 指定したIDのメールを読みます。(/listmailで確認できます) |
