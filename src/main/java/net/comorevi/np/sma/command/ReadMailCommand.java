@@ -29,7 +29,11 @@ public class ReadMailCommand extends Command {
             commandSender.sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.command.few.args"));
             return false;
         }
-        if (!(ServerMailAPI.getInstance().existsMailData(Integer.parseInt(strings[0])) && ServerMailAPI.getInstance().getMailData(Integer.parseInt(strings[0])).target.equals(commandSender.getName()))) {
+        if (!ServerMailAPI.getInstance().existsMailData(Integer.parseInt(strings[0]))) {
+            commandSender.sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.command.mail.not.found"));
+            return true;
+        }
+        if (!ServerMailAPI.getInstance().getMailData(Integer.parseInt(strings[0])).target.equals(commandSender.getName())) {
             commandSender.sendMessage(ServerMailPlugin.prefix + MessageHandler.getInstance().translateString("servermail.command.permission.read"));
             return true;
         }
