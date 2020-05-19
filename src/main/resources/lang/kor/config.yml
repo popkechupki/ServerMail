@@ -3,7 +3,7 @@ version: 1
 
 ## 언어 (지원하는 언어: eng, jpn, kor)
 ## ServerMailAPI는 nukkit.yml의 언어 설정을 이용합니다.
-## 접두사
+## 접두사 (prefix)
 prefix: "§7[ServerMail] §r"
 
 ## 한 페이지에 보여주는 메일의 수.
