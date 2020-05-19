@@ -1,0 +1,17 @@
+## Config 버전. (바꾸지 마세요!)
+version: 1
+
+## 언어 (지원하는 언어: eng, jpn, kor)
+## ServerMailAPI는 nukkit.yml의 언어 설정을 이용합니다.
+## 접두사
+prefix: "§7[ServerMail] §r"
+
+## 한 페이지에 보여주는 메일의 수.
+mailList: 5
+
+## 콘솔로 이메일을 전송하면 사용되는 이름.
+consoleCommandSenderName: "server"
+## 만약 플레이어가 읽지 않는 메일이 있다면 플레이어가 참가할 때 알립니다.
+noticeWhenPlayerJoin: true
+## 새 메일을 받았을 때 플레이어에게 알립니다.
+noticeWhenPlayerReceive: true
