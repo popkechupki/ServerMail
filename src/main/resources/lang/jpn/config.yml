@@ -1,7 +1,7 @@
 ## Configバージョン. (変更しない!)
 version: 1
 
-## 言語設定(対応している言語: eng, jpn)
+## 言語設定(対応している言語: eng, jpn, kor)
 ## ServerMailAPIはnukkit.ymlで設定された言語を使用します。
 ## Prefix
 prefix: "§7[ServerMail] §r"
