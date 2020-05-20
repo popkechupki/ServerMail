@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class LanguageUtil {
-    private static final LinkedList<String> langList = new LinkedList<String>(){{add("eng");add("jpn");}};
+    private static final LinkedList<String> langList = new LinkedList<String>(){{add("eng");add("jpn");add("kor");}};
 
     public static List<String> getAvailableLangList() {
         return langList;
