@@ -2,7 +2,7 @@
 A Nukkit plugin to mail other players.
 **Support over Java8. (from ver1.0.3)**
 ### Language
-Support two languages. English and Japanese. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.
+Support three languages. English, Japanese, and Korean. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.
  - [English](#Usage)
  - [日本語](#使い方)
  - [한국어](#사용법)
