@@ -5,7 +5,7 @@ A Nukkit plugin to mail other players.
 Support two languages. English and Japanese. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.
  - [English](#Usage)
  - [日本語](#使い方)
- - [한국어 (Translated by good777LUCKY)](#사용법)
+ - [한국어](#사용법)
 ## Usage
 You can control this plugin with command, config.yml and lang.properties. Descriptions each files are written in it.
 ### Command
@@ -23,7 +23,7 @@ You can control this plugin with command, config.yml and lang.properties. Descri
 |--|--|
 | /sendmail {送信先} {件名} {内容(スペースが使えます。)} | 指定したプレイヤーにメッセージを送信します。 |
 | /send | メールの送信を確定します。 |
-| /listmail {page} | メールボックスを確認します。 |
+| /listmail {ページ} | メールボックスを確認します。 |
 | /readmail {ID} | 指定したIDのメールを読みます。(/listmailで確認できます) |
 | /deletemail {ID} | 指定したIDのメールを削除します。(/listmailで確認できます。) |
 ## 사용법

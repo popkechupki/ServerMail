@@ -4,6 +4,8 @@ api: ["1.0.9"]
 version: 1.0.6
 description: Server mail for Nukkit.
 author: popkechupki
+authors:
+  - good777LUCKY # Korean translation
 
 permissions:
   servermailapi:
