@@ -2,17 +2,17 @@ package net.comorevi.np.sma.util;
 
 import cn.nukkit.Server;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LanguageUtil {
-    private static final LinkedList<String> langList = new LinkedList<String>(){{add("eng");add("jpn");add("kor");}};
+    private static String[] availableLanguages = {"eng", "jpn", "kor"};
 
     public static List<String> getAvailableLangList() {
-        return langList;
+        return Arrays.asList(availableLanguages);
     }
 
     public static String getPluginLang() {
-        return langList.contains(Server.getInstance().getLanguage().getLang()) ? Server.getInstance().getLanguage().getLang() : "eng";
+        return getAvailableLangList().contains(Server.getInstance().getLanguage().getLang()) ? Server.getInstance().getLanguage().getLang() : "eng";
     }
 }
