@@ -10,8 +10,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class ConfigHandler {
-    private static final int CONFIG_VERSION = 1;
-    private Config config;
+    private static final int CONFIG_VERSION = 2;
+    private final Config config;
     private static final ConfigHandler instance = new ConfigHandler();
 
     private ConfigHandler() {

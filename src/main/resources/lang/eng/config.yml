@@ -1,5 +1,5 @@
 ## Config version. (DO NOT CHANGE!)
-version: 1
+version: 2
 
 ## Language (Available: eng, jpn, kor)
 ## ServerMailAPI using a language configured on nukkit.yml.
@@ -15,3 +15,12 @@ consoleCommandSenderName: "server"
 noticeWhenPlayerJoin: true
 ## Notice for players when receive new mail.
 noticeWhenPlayerReceive: true
+
+## Database Settings
+## 0 for SQLite, 1 for MySQL.
+SQLType: 0
+## MySQL settings
+host: "localhost"
+database: "db"
+username: "steve"
+password: "minecraft"
