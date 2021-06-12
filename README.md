@@ -1,13 +1,14 @@
 # ServerMail
-A Nukkit plugin to mail other players.
+A Nukkit plugin to mail other players. Using SQLite or MySQL to store all data (optional).
 **Support over Java8. (from ver1.0.3)**
 ### Language
-Support three languages. English, Japanese, and Korean. This plugin use default server language that configured on nukkit.yml. I would like you to contribute adding more languages.
+Support three languages. English, Japanese, and Korean. This plugin use default server language that configured on nukkit.yml.
  - [English](#Usage)
  - [日本語](#使い方)
  - [한국어](#사용법)
 ## Usage
 You can control this plugin with command, config.yml and lang.properties. Descriptions each files are written in it.
+When you update this plugin, the plugin will replace config.yml to the latest version. Therefore, old configuration file is renamed to old_config.yml. You may have to setting up the new configuration file. Also, we suggest to delete lang.properties file as well because the plugin doesn't update that file automatically.
 ### Command
 | Command | Description |
 |--|--|
@@ -18,6 +19,7 @@ You can control this plugin with command, config.yml and lang.properties. Descri
 | /deletemail {ID} | Delete specified ID mail.(Confirmable /listmail) |
 ## 使い方
 このプラグインはコマンド、コンフィグファイル、言語ファイルを操作できます。それぞれのファイルの説明はファイル内に記載されています。
+プラグインを更新する際には、古いコンフィグファイルの内容はold_config.ymlに保存されるので、新しく生成されたconfig.ymlの編集の参考にしてください。また、更新時にはlang.propertiesファイルの削除をお勧めします。プラグインは、このファイルについては更新があっても自動で置き換えることはありません。
 ### コマンド
 | Command | Description |
 |--|--|
