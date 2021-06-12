@@ -26,7 +26,11 @@ public class ServerMailPlugin extends PluginBase {
         getServer().getCommandMap().register("readmail", new ReadMailCommand("readmail", MessageHandler.getInstance().translateString("servermail.command.read.description"), MessageHandler.getInstance().translateString("servermail.command.read.usage")));
         getServer().getCommandMap().register("listmail", new ListMailCommand("listmail", MessageHandler.getInstance().translateString("servermail.command.list.description"), MessageHandler.getInstance().translateString("servermail.command.list.usage")));
         getServer().getCommandMap().register("deletemail", new DeleteMailCommand("deletemail", MessageHandler.getInstance().translateString("servermail.command.delete.description"), MessageHandler.getInstance().translateString("servermail.command.delete.usage")));
-        getServer().getLogger().info(prefix + ServerMailAPI.getMessageUtil().translateString("servermail.plugin.info.sqltype", dbType.getStr()));
+        if (ServerMailAPI.getConfigUtil().isReady()) {
+            getServer().getLogger().info(prefix + ServerMailAPI.getMessageUtil().translateString("servermail.plugin.info.sqltype", dbType.getStr()));
+        } else {
+            getServer().getPluginManager().disablePlugin(this);
+        }
     }
 
     @Override
