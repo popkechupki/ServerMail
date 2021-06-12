@@ -1,5 +1,5 @@
 ## Configバージョン. (変更しない!)
-version: 1
+version: 2
 
 ## 言語設定(対応している言語: eng, jpn, kor)
 ## ServerMailAPIはnukkit.ymlで設定された言語を使用します。
@@ -15,3 +15,12 @@ consoleCommandSenderName: "server"
 noticeWhenPlayerJoin: true
 ## メールを受信した時にプレイヤーに通知します。
 noticeWhenPlayerReceive: true
+
+## データベース設定
+## 0はSQLite, 1はMySQLを使用。
+SQLType: 0
+## MySQLの設定
+host: "localhost"
+database: "db"
+username: "steve"
+password: "minecraft"
